@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+//let rock =document.getElementById('rock');
+//let paper = document.getElementById('paper');
+//let scissor = document.getElementById('scissor');
+function rock(){
+    
+    let ran = Math.floor(Math.random()*3);
+     console.log(ran);
+    if(ran==0){
+       
+       document.getElementsByClassName('result1')[0].innerHTML="YOU DRAW!<br>TRY AGAIN";
+       document.getElementsByClassName('part1')[0].innerHTML="<b>ROCK</b>";
+        }
+        if(ran==1){
+
+            document.getElementsByClassName('result1')[0].innerHTML="YOU LOOSE<br>COMPUTER WIN";
+            document.getElementsByClassName('part1')[0].innerHTML="<b>PAPER</b>";
+        }
+        if(ran==2){
+            
+            document.getElementsByClassName('result1')[0].innerHTML="YOU WIN<br>COMPUTER LOOSE";
+            document.getElementsByClassName('part1')[0].innerHTML="<b>SCISSOR</b>";
+        }
+    }
+
+function scissor(){
+    let ran = Math.floor(Math.random()*3);
+     console.log(ran);
+     if(ran==0){
+       document.getElementsByClassName('result1')[0].innerHTML="YOU DRAW!<br>TRY AGAIN";
+       document.getElementsByClassName('part1')[0].innerHTML="<b>SCISSOR</b>";
+       
+        }
+        if(ran==1){
+            document.getElementsByClassName('result1')[0].innerHTML="YOU LOOSE<br>COMPUTER WIN";
+            document.getElementsByClassName('part1')[0].innerHTML="<b>ROCK</b>";
+        }
+        if(ran==2){
+            document.getElementsByClassName('result1')[0].innerHTML="YOU WIN<br>COMPUTER LOOSE";
+            document.getElementsByClassName('part1')[0].innerHTML="<b>PAPER</b>";
+        }
+}
+function paper(){
+    let ran = Math.floor(Math.random()*3);
+     console.log(ran);
+     if(ran==0){
+       document.getElementsByClassName('result1')[0].innerHTML="YOU DRAW!<br>TRY AGAIN";
+       document.getElementsByClassName('part1')[0].innerHTML="<b>PAPER</b>";
+        }
+        if(ran==1){
+            document.getElementsByClassName('result1')[0].innerHTML="YOU LOOSE<br>COMPUTER WIN";
+            document.getElementsByClassName('part1')[0].innerHTML="<b>SCISSOR</b>";
+        }
+        if(ran==2){
+            document.getElementsByClassName('result1')[0].innerHTML="YOU WIN<br>COMPUTER LOOSE";
+            document.getElementsByClassName('part1')[0].innerHTML="<b>ROCK</b>";
+        }
+}
+    </script>
+</head>
+<body><div class="main">
+    <div class="container" id="container">
+    <div class="rock" id="rock" ><button onclick="rock()"><h2>Rock</h2></button></div>
+      <div class="paper"id="paper"><button onclick="paper()"><h2>Paper</h2></button></div>
+       <div class="scissor"id="scissor" ><button onclick="scissor()"><h2>Scissor</h2></button></div>
+    </div>
+    <div class="computer"><center><div class="result1"></center>></div>
+    <div class="result"><h1>Computer</h1><div class="part1" id="computer-picture">I am ready to start the game</div>
+    </div>
+    
+</body>
+</html>

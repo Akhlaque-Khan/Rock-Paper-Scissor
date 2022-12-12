@@ -1,0 +1,112 @@
+.scissor{
+    background-image: url(https://thepractice.wms.co.uk/sharedimages/Large/Staples/ST-5151753.jpg);
+    height: 250px;
+    border-radius: 6px;
+    width: 350px;
+
+
+}
+.paper{
+    background-image: url(https://rukminim1.flixcart.com/image/416/416/paper/z/7/h/ziggle-craft-paper-fp15896-original-imae5m2eyyhfya6h.jpeg?q=70);
+    height: 250px;
+    background-repeat: no-repeat;
+    width: 350px;
+    background-size: cover;
+    border-radius: 6px;
+
+
+    
+}
+.rock{
+    background-image: url(https://www.shutterstock.com/image-photo/krishnas-butterball-giant-natural-balancing-260nw-599803469.jpg);
+    height: 250px;
+    background-repeat: no-repeat;
+    width: 350px;
+    border-radius: 6px;
+    
+}
+body{
+    background: url(https://wallpapercave.com/wp/wp2587534.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main{
+    display: grid;
+    grid-template-columns: 0.75fr 0.9fr 1.35fr;
+    grid-gap: 10px;
+}.container{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin:20px;
+    
+}
+.computer{
+    border-radius: 20px;
+    text-align: center;
+    background:url(https://i.insider.com/5b06c6635e48ec4b008b45c8?width=750&format=jpeg&auto=webp);
+    height:500px;
+    margin-top: 100px;
+
+   
+    
+}
+.result1{
+    background-color: aliceblue;
+    height: 70px;
+    margin-top:200px;
+    background-image: url();
+    width: 70%;
+    border-radius: 60px;
+    font-size: 30px;
+    text-shadow: 2px 4px rgba(0,0,0,0.3);
+    font-style: italic;
+    font-weight: 700;
+
+}
+.result{
+   
+    height: 550px;
+    background-repeat: no-repeat;
+    width:90%;
+    margin-top: 140px;
+   
+}
+.part1{
+    border:2px solid black;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwEv9Ha8rMFthbWehhPym4x3pL3mdKFl2FNA&usqp=CAU);
+    text-align: center;
+    margin-left: 57px;
+    color: aliceblue;
+    font-style: italic;
+    text-shadow: 2px 4px rgba(255, 255, 255, 0.4);
+
+
+
+}
+.part1{
+    width:80%;
+    
+    font-size: 70px;
+    text-align: center;
+    border-radius: 60px;
+}
+.result h1{
+    text-align: center;
+    font-size: 70px;
+    color: aliceblue;
+    font-style: italic;
+    text-shadow: 2px 4px rgba(255, 255, 255, 0.4);
+}
+button{
+    width:100px;
+    margin-left: 9px;
+    margin-top: 9px;
+    border-radius: 30px;
+    font-style: italic;
+}
+button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
